@@ -14,13 +14,13 @@
   ],
   "license": "(MIT OR GPL-3.0)",
   "bugs": {
-    "url": "https://bitbucket.org/fajarferdian/sbg-xml-merge/issues"
+    "url": "https://github.com/fajarvm/sbg-xml-merge/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://fajarferdian@bitbucket.org/fajarferdian/sbg-xml-merge.git"
+    "url": "git+https://fajarvm@github.com/fajarvm/sbg-xml-merge.git"
   },
-  "homepage": "https://bitbucket.org/fajarferdian/sbg-xml-merge",
+  "homepage": "https://github.com/fajarvm/sbg-xml-merge",
   "main": "main.js",
   "dependencies": {
     "file-system": "^2.2.1",

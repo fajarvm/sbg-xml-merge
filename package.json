@@ -6,7 +6,7 @@
   "license": "(MIT OR GPL-3.0)",
   "repository": {
     "type": "git",
-    "url": "git+https://fajarvm@bitbucket.org/fajarvm/sbg-xml-merge.git"
+    "url": "git+https://fajarvm@github.com/fajarvm/sbg-xml-merge.git"
   },
   "scripts": {
     "postinstall": "install-app-deps",
