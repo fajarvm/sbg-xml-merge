@@ -1,0 +1,31 @@
+{
+  "name": "sbg-xml-merge",
+  "productName": "SBG XML Merge",
+  "version": "0.2.5",
+  "identifier": "com.fajarvanmegen.sbgxmlmerge",
+  "description": "An application to merge XML files into a single file that conforms with SBG XSD v5.0 (sbggz.nl)",
+  "author": "Fajar van Megen <fajarvm@gmail.com>",
+  "keywords": [
+    "SBG",
+    "XML",
+    "merge",
+    "sbggz",
+    "Electron"
+  ],
+  "license": "(MIT OR GPL-3.0)",
+  "bugs": {
+    "url": "https://bitbucket.org/fajarferdian/sbg-xml-merge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fajarferdian@bitbucket.org/fajarferdian/sbg-xml-merge.git"
+  },
+  "homepage": "https://bitbucket.org/fajarferdian/sbg-xml-merge",
+  "main": "main.js",
+  "dependencies": {
+    "file-system": "^2.2.1",
+    "moment": "latest",
+    "nconf": "^0.8.4",
+    "xmldom": "^0.1.22"
+  }
+}

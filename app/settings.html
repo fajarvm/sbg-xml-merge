@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/settings.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="close" aria-label="Close">Close</div>
+<div id="settings-screen" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-10">
+            <h2 id="window-title">Settings</h2>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Select the input and output folders:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 io-label">
+                    Input folder:
+                </div>
+                <div class="col-xs-9 io-field" id="input_column">
+                    <span id="input_label">placeholder_text_for_input_span</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3 io-label">
+                    Output folder:
+                </div>
+                <div class="col-xs-9 io-field" id="output_column">
+                    <span id="output_label">placeholder_text_for_output_span</span>
+                </div>
+            </div>
+
+            <!-- TODO: REMOVED due compile issues
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="checkbox">
+                        <input type="checkbox" id="validate_xml_chk" aria-label="Validate XML">
+                        <label for="validate_xml_chk"> Validate XML after merge</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="xsd_file_selector_row">
+                <div class="col-xs-3 io-label">
+                    XSD file:
+                </div>
+                <div class="col-xs-9 io-field" id="xsd_input">
+                    <span id="xsd_label">placeholder_text_for_input_span</span>
+                </div>
+            </div>
+            -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="checkbox">
+                        <input type="checkbox" id="initial_submission_chk" aria-label="Initial submission">
+                        <label for="initial_submission_chk"> File is created for initial submission</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="caregiver_info_row">
+                <div class="col-xs-3 io-label">
+                    <label for="cg_name">Name:<sup>*</sup></label>
+                </div>
+                <input class="col-xs-3 io-field" type="text" id="cg_name" name="cg_name" value="" aria-label="Zorgaanbiedernaam" data-toggle="tooltip" data-placement="top" title="Required">
+                <div class="col-xs-3 io-label">
+                    <label for="cg_code">AGB-Code:<sup>*</sup></label>
+                </div>
+                <input class="col-xs-3 io-field" type="text" id="cg_code" name="cg_code" value="" aria-label="Zorgaanbiedercode" data-toggle="tooltip" data-placement="top" title="Required">
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="checkbox">
+                        <input type="checkbox" id="remove_attributes_chk" aria-label="Exclude attributes">
+                        <label for="remove_attributes_chk"> Exclude attributes: <em>startdatumZorgtraject</em>, <em>einddatumZorgtraject</em></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bottom-row">
+                <div class="col-xs-12">
+                    <button class="btn btn-default" type="button" id="reset-settings-btn" aria-label="Reset">Reset settings</button>
+                    <button class="btn btn-default pull-right" type="button" id="close-window-btn" aria-label="Close">Close window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>window.$ = window.jQuery = require('./js/jquery-1.12.3.min.js');</script>
+<script src="js/settings.js"></script>
+<script src="js/tooltip.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({container: 'body'});
+    });
+</script>
+</body>
+</html>

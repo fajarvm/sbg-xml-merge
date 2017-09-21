@@ -1,0 +1,148 @@
+body {
+    /*overflow: hidden;*/
+    padding-top: 70px;
+    background-color: #fff;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+
+    font-family: HelveticaNeue-Thin, HelveticaNeue, arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.tooltip {
+    font-weight: 200;
+}
+
+/******* Header *******/
+.navbar {
+    height: 70px;
+    background-color: #4d4f53;
+    padding: 5px 5px;
+}
+
+.navbar .navbar-brand {
+    padding: 0 5px;
+}
+
+.navbar .navbar-brand img {
+    height: 60px;
+}
+
+.navbar .navbar-m {
+    text-align: center;
+}
+
+.navbar .navbar-text {
+    font-size: 22px;
+    color: #fff;
+    float: none;
+}
+
+.navbar .navbar-r {
+    text-align: right;
+}
+
+.navbar .btn {
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #4d4f53;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar .btn:hover {
+    background-color: #666;
+}
+
+.row-header {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+}
+
+/******* Files list *******/
+#files-list {
+    height: 150px;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+/*
+#files-list .input-group-container label {
+    width: 95%;
+}
+*/
+
+#files-list .input-group-container label:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+#files-list label, #tools-row-1 label {
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+/******* Toolbar *******/
+#open-folder-checkbox {
+    margin-left: 15px;
+}
+
+#merge-btn {
+    width: 140px;
+}
+
+/******* Logging window *******/
+.logging-window-container {
+    font-size: 12px;
+}
+
+#logging-window {
+    background-color: #fff;
+    max-height: 270px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    -webkit-user-select: text;
+}
+
+/******* Footer *******/
+.footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #dad7d2;
+}
+
+.footer #clean-log-window-btn {
+    background-color: #dad7d2;
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+}
+
+.footer .footer-text {
+    font-size: 12px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer a, .footer a:active, .footer a:visited {
+    margin-left: 5px;
+    color: #4d4f53;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer, .footer .container, .footer .footer-text {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
